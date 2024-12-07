@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Our Policies</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="employees.html">Our Team</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="policies.html">Policies</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Financing</h2>
+            <p>Flexible payment options available.</p>
+            <h2>Delivery</h2>
+            <p>All products are delivered using eco-friendly packaging.</p>
+            <h2>Returns</h2>
+            <p>Returns are accepted within 30 days.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 EcoInnovate Solutions</p>
+    </footer>
+</body>
+</html>
