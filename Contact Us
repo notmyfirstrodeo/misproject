@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="employees.html">Our Team</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="policies.html">Policies</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Corporate Office -->
+        <section>
+            <h2>Corporate Office</h2>
+            <p>Address : 145 S Hill Blvd, San Francisco, CA 94112</p>
+            <p>Phone: 209-555-1234</p>
+            <p>Fax: 555-5678</p>
+            <p>Email: <a href="mailto:info@ecostride.com?subject=Corporate Inquiry">info@ecostride.com</a></p>
+
+            <!-- Google Maps Embed -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6312.779097013373!2d-122.43543991097575!3d37.710533199810094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7ebde8cfd4ad%3A0xdea6c46bce41db39!2s145%20S%20Hill%20Blvd%2C%20San%20Francisco%2C%20CA%2094112!5e0!3m2!1sen!2sus!4v1733614844871!5m2!1sen!2sus" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+        
+        <!-- Regional Offices -->
+        <section>
+            <h2>Regional Offices</h2>
+            
+            <!-- East Coast Regional Office -->
+            <div class="regional-office">
+                <h3>East Coast Regional Office</h3>
+                <p>Address: 456 East Lane, New York, NY 10001</p>
+                <p>Phone: 212-555-2011</p>
+                <p>Fax: 555-2012</p>
+                <p>Email: <a href="mailto:eastoffice@ecostride.com?subject=Regional Office Inquiry">eastoffice@ecostride.com</a></p>
+            </div>
+            
+            <!-- West Coast Regional Office -->
+            <div class="regional-office">
+                <h3>West Coast Regional Office</h3>
+                <p>Address: 10 Post Office Square Boston, MA 02109</p>
+                <p>Phone: 978-555-3011</p>
+                <p>Fax: 555-3012</p>
+                <p>Email: <a href="mailto:westoffice@ecostride.com?subject=Regional Office Inquiry">westoffice@ecostride.com</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 EcoInnovate Solutions</p>
+    </footer>
+</body>
+</html>
