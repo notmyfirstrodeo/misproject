@@ -1,62 +1,173 @@
-/* Reset default browser styles for consistency */
+/* Global Resets & Base Styles */
 * {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    box-sizing: border-box; /* Include padding and border in element width/height */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Body styling for background and layout */
+html {
+    font-size: 16px; 
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif; /* Use a clean, professional font */
-    background: #1d1d35; /* Set a dark blue-gray background color */
-    color: white; /* Set text color to white for contrast */
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Horizontally center content */
-    align-items: center; /* Vertically center content */
-    height: 100vh; /* Fill the full height of the viewport */
-    text-align: center; /* Center align all text */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333;
 }
 
-/* Container styling for the main content box */
+/* Layout Helpers */
 .container {
-    background: #2b2b50; /* Slightly lighter background for contrast */
-    border-radius: 15px; /* Rounded corners for a modern look */
-    padding: 20px; /* Add padding inside the container */
-    width: 90%; /* Set responsive width for smaller screens */
-    max-width: 800px; /* Limit width on larger screens */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
-/* Header styling for the main title */
-h1 {
-    font-size: 2.5rem; /* Large font size for emphasis */
-    margin-bottom: 15px; /* Add space below the header */
-    color: #ffd700; /* Use a gold color to draw attention */
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: #052c4b;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
-/* Styling for the button */
+p {
+    margin-bottom: 15px;
+}
+
+/* Links */
+a {
+    color: #0077be;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #005f95;
+}
+
+/* Header & Navigation */
+header {
+    background: #052c4b;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hero Image */
+.hero-image {
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+/* Products Section */
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    min-width: 280px;
+}
+
+.product {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product img {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.product-description {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* Buttons */
 button {
-    background: #ff4757; /* Bright red for visibility */
-    border: none; /* Remove default button border */
-    border-radius: 20px; /* Rounded corners for a soft look */
-    color: white; /* White text for contrast */
-    padding: 10px 20px; /* Add padding for a comfortable size */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    font-size: 1rem; /* Set font size */
-    margin-top: 20px; /* Add space above the button */
-    transition: background 0.3s ease; /* Smooth transition for hover effect */
+    background: #0077be;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
 }
 
-/* Button hover effect */
 button:hover {
-    background: #ff6b81; /* Lighten the red when hovered */
+    background: #005f95;
 }
 
-/* Styling for the image */
-.container img {
-    width: 80%; /* Make the image responsive */
-    max-width: 300px; /* Limit maximum image width */
-    border-radius: 10px; /* Slightly round the image corners */
-    margin: 20px auto; /* Add space above and below the image, center it */
-    display: block; /* Ensure the image is centered */
+/* Footer */
+footer {
+    background: #052c4b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
 }
