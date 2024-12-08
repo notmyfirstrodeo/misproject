@@ -188,3 +188,16 @@ footer {
     max-width: 800px;
     margin: 0 auto;
 }
+.employees-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* space between columns and rows */
+    justify-content: center; /* center the columns */
+}
+
+/* Make each .employee take half the width of the container (minus the gap) on larger screens */
+.employee {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+    text-align: center; /* ensures text is centered if not already done */
+}
